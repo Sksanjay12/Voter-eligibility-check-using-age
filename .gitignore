@@ -1,24 +1,18 @@
-# Compiled class file
-*.class
+import java.util.Scanner;
 
-# Log file
-*.log
+public class VoterEligibility {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
 
-# BlueJ files
-*.ctxt
+        // Take age input from user
+        System.out.print("Enter your age: ");
+        int age = sc.nextInt();
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
-*.jar
-*.war
-*.nar
-*.ear
-*.zip
-*.tar.gz
-*.rar
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-replay_pid*
+        // Check eligibility
+        if (age >= 18) {
+            System.out.println("You are eligible to vote.");
+        } else {
+            System.out.println("You are NOT eligible to vote.");
+        }
+    }
+}
